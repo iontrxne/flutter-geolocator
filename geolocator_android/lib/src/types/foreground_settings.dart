@@ -123,3 +123,9 @@ class ForegroundNotificationConfig {
     };
   }
 }
+
+extension ColorExtension on Color {
+  int toARGB32() {
+    return (alpha << 24) | (red << 16) | (green << 8) | blue;
+  }
+}
